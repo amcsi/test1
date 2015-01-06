@@ -1,0 +1,15 @@
+{
+    "require": {
+        "symfony/console": "~2.0"
+    },
+    "require-dev": {
+        "raveren/kint": "dev-master",
+        "phpunit/phpunit": "~4.0",
+        "mockery/mockery": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ucs\\": "src"
+        }
+    }
+}
