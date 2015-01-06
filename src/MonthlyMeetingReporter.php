@@ -22,6 +22,15 @@ class MonthlyMeetingReporter
         $this->date = $date;
     }
 
+    /**
+     * Calculates the important meeting days of the next 6 months 
+     * 
+     * @access public
+     * @return \DateTime[][]    An array of arrays. The outer array contains
+     *                          the information for a month, and the inner array
+     *                          has the mid month meeting and end of month testing
+     *                          dates as \DateTime.
+     */
     public function report()
     {
         $date = $this->date;
