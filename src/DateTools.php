@@ -15,7 +15,7 @@ class DateTools
 
     /**
      * Returns the date of next monday if the given date's day
-     * is on a Saturday or Sunday, otherwise returns the same date. 
+     * is on a Saturday or Sunday, otherwise returns a clone of the same date. 
      * 
      * @param \DateTime $date 
      * @access public
@@ -30,7 +30,7 @@ class DateTools
 
         if ($goodDay) {
             // return the same inputted date
-            return $date;
+            return clone $date;
         }
 
         // Bad date. Find next monday.
@@ -39,7 +39,7 @@ class DateTools
 
     /**
      * Returns the date of last thursday if the given date's day
-     * is on a Saturday or Sunday, otherwise returns the same date. 
+     * is on a Saturday or Sunday, otherwise returns a clone of the same date. 
      * 
      * @param \DateTime $date 
      * @access public
@@ -55,7 +55,7 @@ class DateTools
 
         if ($goodDay) {
             // return the same inputted date
-            return $date;
+            return clone $date;
         }
 
         // Bad date. Find last thursday.
